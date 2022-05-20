@@ -1,0 +1,48 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BOOKMARKER</title>
+</head>
+<body>
+    <div class="container w-75 bg-light p-5 text-center">
+        <h1>BOOKMARK YOUR FAVORITE WEBSITES</h1>
+        <label for="name" class="m-3" > Website Name </label>
+        <input type="text" class="form-control" id="name">
+
+        <label for="url" class="m-3 "> Website URL </label>
+        <input type="text" class="form-control" id="url">
+
+
+        <button type="submit" class="btn btn-success m-3" onclick="submitValue ()">Submit</button>
+        <button type="reset" class="btn btn-success" onclick="clearElements ()">Reset</button>
+
+
+    </div>
+    <div class="container w-75 mt-5">
+        <table class="table table-success table-striped-columns">
+            <thead>
+                <th>website Name</th>
+                <th>website url</th>
+            </thead>
+            <tbody id="demo">
+                
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="/js/test.js"></script>
+</body>
+</html>
